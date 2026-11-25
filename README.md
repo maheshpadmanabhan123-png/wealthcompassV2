@@ -132,4 +132,4 @@ Wealth Compass is a concept demonstration created for design and educational pur
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+**Proprietary — all rights reserved.** This project is not open source. No use, copying, modification or distribution is permitted without prior written permission. See [LICENSE](LICENSE).
