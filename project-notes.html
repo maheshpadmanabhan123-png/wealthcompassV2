@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project notes — Wealth Compass</title>
+  <meta name="description" content="How the Wealth Compass static site is built, where everything lives, and how to run or deploy it." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#070a0f" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Wealth Compass home">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" opacity=".55" />
+          <path d="M24 6l4 14 14 4-14 4-4 14-4-14L6 24l14-4 4-14Z" fill="currentColor" />
+          <circle cx="24" cy="24" r="2.6" fill="#070a0f" />
+        </svg>
+        <span class="brand-word">Wealth <em>Compass</em></span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="education.html">Education</a>
+        <a href="insights.html">Insights</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#start" class="btn btn-gold btn-sm">Start free</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Project notes</span>
+        </nav>
+        <h1>How this site is <em>built.</em></h1>
+        <p class="lede">
+          A plain-HTML record of the project: what each file does, where the demo data lives,
+          and how to run or deploy it. Kept as HTML so it still makes sense years from now.
+        </p>
+        <div class="page-stats">
+          <div class="page-stat"><span>Stack</span><strong>HTML · CSS · JS</strong></div>
+          <div class="page-stat"><span>Build step</span><strong>None</strong></div>
+          <div class="page-stat"><span>Hosting</span><strong>GitHub Pages</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paper">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>File map</span>
+            <h2>Four pages. <em>One design system.</em></h2>
+            <p>Everything is static. There is no framework, no package manager and no compilation step.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap" data-reveal>
+          <table>
+            <caption class="sr-only">Project file map</caption>
+            <thead>
+              <tr><th scope="col">File</th><th scope="col">Purpose</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="mono">index.html</td><td>Homepage: hero, portfolio dashboard, AI analysis, global coverage, SIP calculator, education preview, jargon decoder.</td></tr>
+              <tr><td class="mono">portfolio.html</td><td>Risk quiz, onboarding steps, tax wrappers for India / UAE / USA, rebalancing table.</td></tr>
+              <tr><td class="mono">education.html</td><td>Filterable library, learning paths, case studies, risk rules, glossary accordion.</td></tr>
+              <tr><td class="mono">insights.html</td><td>Market snapshot, interactive chart, AI signal feed, economic calendar, personas.</td></tr>
+              <tr><td class="mono">404.html</td><td>Friendly not-found page.</td></tr>
+              <tr><td class="mono">project-notes.html</td><td>This page — the HTML build record.</td></tr>
+              <tr><td class="mono">assets/css/style.css</td><td>The whole design system: tokens, layout, components, responsive rules, motion.</td></tr>
+              <tr><td class="mono">assets/js/main.js</td><td>All interactions: charts, dashboard, calculator, quiz, filters, tabs, accordion.</td></tr>
+              <tr><td class="mono">assets/favicon.svg</td><td>Compass mark used as the site icon.</td></tr>
+              <tr><td class="mono">.github/workflows/pages.yml</td><td>GitHub Actions workflow that publishes the site to Pages.</td></tr>
+              <tr><td class="mono">README.md</td><td>Repository readme and quick-start guide.</td></tr>
+              <tr><td class="mono">LICENSE</td><td>MIT licence.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>Run &amp; deploy</span>
+            <h2>Open a file, or <em>push a branch.</em></h2>
+            <p>Because there is no build step, local preview and production use the same files.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <article class="step" data-reveal data-delay="0">
+            <span class="n">01</span>
+            <h3>Preview locally</h3>
+            <p>Open <span class="mono">index.html</span> directly, or serve the folder for accurate paths.</p>
+            <ul class="path-list">
+              <li><span>1</span>python -m http.server 8080</li>
+              <li><span>2</span>Visit localhost:8080</li>
+            </ul>
+          </article>
+
+          <article class="step" data-reveal data-delay="90">
+            <span class="n">02</span>
+            <h3>Commit the repo</h3>
+            <p>The folder is already a git repository with one commit on <span class="mono">main</span>.</p>
+            <ul class="path-list">
+              <li><span>1</span>git add -A</li>
+              <li><span>2</span>git commit -m "update"</li>
+            </ul>
+          </article>
+
+          <article class="step" data-reveal data-delay="180">
+            <span class="n">03</span>
+            <h3>Publish to Pages</h3>
+            <p>Push to GitHub, then choose GitHub Actions as the Pages source. The workflow does the rest.</p>
+            <ul class="path-list">
+              <li><span>1</span>git remote add origin &lt;url&gt;</li>
+              <li><span>2</span>git push -u origin main</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="ai-strip" style="margin-top:34px" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></svg>
+          <p><b>Customising:</b> colours and type live in the CSS custom properties at the top of <span class="mono">style.css</span>. Demo portfolio values, risk profiles and currency rates live in <span class="mono">main.js</span>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <span class="eyebrow" data-reveal><span class="dot"></span>Back to the product</span>
+        <h2 data-reveal>See it <em>in motion.</em></h2>
+        <p data-reveal>The best way to understand the build is to use it.</p>
+        <div class="hero-actions" style="justify-content:center" data-reveal>
+          <a class="btn btn-gold btn-lg" href="index.html">
+            Open the homepage
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="portfolio.html#quiz">Try the risk quiz</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Wealth Compass. All rights reserved.</span>
+        <span>Made for India · UAE · USA · Global</span>
+      </div>
+      <p class="disclaimer">
+        Wealth Compass is a concept demonstration created for design and educational purposes. All figures, market data,
+        projections and AI signals shown are illustrative and do not represent real accounts or live prices. Nothing on this
+        site is investment, tax or legal advice.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

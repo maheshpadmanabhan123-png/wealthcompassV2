@@ -16,6 +16,8 @@ A multi-page, static website concept for a modern wealth-management product — 
 | `portfolio.html` | Portfolio management: 5-question risk quiz, 3-step onboarding, market-specific tax wrappers (India / UAE / USA), rebalancing table |
 | `education.html` | Free education: filterable 12-resource library, learning paths, updated case studies, risk rules, glossary accordion |
 | `insights.html` | Market intelligence: snapshot cards, interactive market chart, AI signal feed, economic calendar, "what this means for you" personas |
+| `404.html` | Friendly not-found page |
+| `project-notes.html` | A plain-HTML build record: file map, run and deploy notes, customisation pointers |
 
 ---
 
@@ -52,6 +54,8 @@ No frameworks. No build step. Just HTML, CSS and vanilla JavaScript.
 ├── portfolio.html
 ├── education.html
 ├── insights.html
+├── 404.html
+├── project-notes.html
 ├── assets/
 │   ├── css/
 │   │   └── style.css
@@ -62,8 +66,10 @@ No frameworks. No build step. Just HTML, CSS and vanilla JavaScript.
 │   └── workflows/
 │       └── pages.yml
 ├── .gitignore
+├── .nojekyll
 ├── LICENSE
-└── README.md
+├── README.md
+└── robots.txt
 ```
 
 ---
