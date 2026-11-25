@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Static demo site. No private areas to disallow.

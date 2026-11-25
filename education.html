@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment Education — Wealth Compass</title>
+  <meta name="description" content="Free investment and trading education, updated case studies, financial literacy and market-specific guides for India, the UAE and the US. No paywall, no jargon." />
+  <meta name="theme-color" content="#070a0f" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Wealth Compass home">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" opacity=".55" />
+          <path d="M24 6l4 14 14 4-14 4-4 14-4-14L6 24l14-4 4-14Z" fill="currentColor" />
+          <circle cx="24" cy="24" r="2.6" fill="#070a0f" />
+        </svg>
+        <span class="brand-word">Wealth <em>Compass</em></span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="education.html" aria-current="page">Education</a>
+        <a href="insights.html">Insights</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#start" class="btn btn-ghost btn-sm">Sign in</a>
+        <a href="index.html#start" class="btn btn-gold btn-sm">Start free</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Education</span>
+        </nav>
+        <h1>Money, explained like a <em>human.</em></h1>
+        <p class="lede">
+          Free lessons, real case studies and market guides for India, the UAE and the US.
+          No paywall. No hype. No acronym left standing without a translation.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-gold btn-lg" href="#library">
+            Browse the library
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#paths">See learning paths</a>
+        </div>
+        <div class="page-stats">
+          <div class="page-stat"><span>Resources</span><strong>Free, forever</strong></div>
+          <div class="page-stat"><span>Reading time</span><strong>35 min to 3 hrs</strong></div>
+          <div class="page-stat"><span>Markets</span><strong>India · UAE · USA</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIBRARY -->
+    <section class="section paper" id="library">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>The library</span>
+            <h2>Start where you are. <em>Not where you think you should be.</em></h2>
+            <p>Every resource is written for someone with a job, a budget and better things to do than memorise financial jargon.</p>
+          </div>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter learning resources" data-reveal>
+          <button class="filter-chip" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-chip" type="button" data-filter="investing" aria-pressed="false">Investing</button>
+          <button class="filter-chip" type="button" data-filter="trading" aria-pressed="false">Trading</button>
+          <button class="filter-chip" type="button" data-filter="risk" aria-pressed="false">Risk</button>
+          <button class="filter-chip" type="button" data-filter="cases" aria-pressed="false">Case studies</button>
+          <button class="filter-chip" type="button" data-filter="guides" aria-pressed="false">Guides</button>
+          <span class="filter-count" id="eduCount">12 resources</span>
+        </div>
+
+        <div class="edu-grid" data-reveal>
+          <a class="edu-card" href="#paths" data-cat="investing">
+            <div class="edu-meta"><span>Beginner</span><span>12 lessons</span><span>3 hrs</span></div>
+            <h3>Investing, from zero</h3>
+            <p>Shares, funds, bonds and gold — without a single unexplained acronym. Start here if the whole thing feels like a foreign language.</p>
+            <div class="edu-foot"><span>Learning path</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#paths" data-cat="investing">
+            <div class="edu-meta"><span>Intermediate</span><span>8 lessons</span><span>2 hrs</span></div>
+            <h3>Build a portfolio that fits you</h3>
+            <p>Risk, allocation and rebalancing — using your own numbers, not a generic 60/40 rule from 1995.</p>
+            <div class="edu-foot"><span>Learning path</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#risk" data-cat="risk">
+            <div class="edu-meta"><span>All levels</span><span>6 lessons</span><span>90 min</span></div>
+            <h3>Risk, drawdowns &amp; staying calm</h3>
+            <p>What a 20% fall feels like, why it happens, and how to avoid selling at the bottom — the most expensive mistake in investing.</p>
+            <div class="edu-foot"><span>Risk module</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#risk" data-cat="trading">
+            <div class="edu-meta"><span>Beginner</span><span>5 lessons</span><span>45 min</span></div>
+            <h3>Trading vs investing</h3>
+            <p>They use the same app and the same ticker. They are not the same activity. Know which one you are doing — and why.</p>
+            <div class="edu-foot"><span>Trading basics</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#glossary" data-cat="investing">
+            <div class="edu-meta"><span>Intermediate</span><span>7 lessons</span><span>70 min</span></div>
+            <h3>Reading a balance sheet in 20 minutes</h3>
+            <p>Assets, liabilities, cash flow and the three numbers that tell you whether a business is actually healthy.</p>
+            <div class="edu-foot"><span>Fundamentals</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#paths" data-cat="guides">
+            <div class="edu-meta"><span>Beginner</span><span>6 lessons</span><span>60 min</span></div>
+            <h3>Tax wrappers: India, UAE, USA</h3>
+            <p>ELSS, PPF, NPS, gratuity, 401(k), IRA. What each one is for — and the mistakes that make them less useful.</p>
+            <div class="edu-foot"><span>Market guide</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#cases" data-cat="cases">
+            <div class="edu-meta"><span>Case study</span><span>15 min</span></div>
+            <h3>The 2020 crash, replayed</h3>
+            <p>Global equities fell about a third in 33 days. What happened to a ₹10 lakh portfolio — and to the people who sold?</p>
+            <div class="edu-foot"><span>Case study</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#cases" data-cat="cases">
+            <div class="edu-meta"><span>Case study</span><span>12 min</span></div>
+            <h3>Gold in an Indian portfolio</h3>
+            <p>Why a 10% gold sleeve has softened the worst years for decades — and why it is insurance, not a hero.</p>
+            <div class="edu-foot"><span>Case study</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#cases" data-cat="cases">
+            <div class="edu-meta"><span>Case study</span><span>18 min</span></div>
+            <h3>Building a halal portfolio</h3>
+            <p>Screened equities, sukuk and gold can build a fully diversified plan. The work is in the screens and purification, not the return.</p>
+            <div class="edu-foot"><span>Case study</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#glossary" data-cat="guides">
+            <div class="edu-meta"><span>Intermediate</span><span>5 lessons</span><span>50 min</span></div>
+            <h3>Currency risk for global investors</h3>
+            <p>Your fund can go up while your money goes down. How to think about the rupee, dirham and dollar in one plan.</p>
+            <div class="edu-foot"><span>Market guide</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#risk" data-cat="guides">
+            <div class="edu-meta"><span>Beginner</span><span>4 lessons</span><span>35 min</span></div>
+            <h3>Emergency funds that actually work</h3>
+            <p>Three to six months of expenses, somewhere boring and liquid. The unglamorous foundation of every good plan.</p>
+            <div class="edu-foot"><span>Personal finance</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+
+          <a class="edu-card" href="#risk" data-cat="risk">
+            <div class="edu-meta"><span>All levels</span><span>6 lessons</span><span>55 min</span></div>
+            <h3>Behavioural traps that cost money</h3>
+            <p>Loss aversion, recency bias and the urge to do something. Your brain is the most expensive part of your portfolio.</p>
+            <div class="edu-foot"><span>Behaviour</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATHS -->
+    <section class="section" id="paths">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>Learning paths</span>
+            <h2>Pick a path. <em>Go in order.</em></h2>
+            <p>You do not need to read everything. You need the next right thing, in the right order.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <article class="step" data-reveal data-delay="0">
+            <span class="n">01</span>
+            <h3>First 30 days</h3>
+            <p>Get the foundations in place before you pick a single fund.</p>
+            <ul class="path-list">
+              <li><span>1</span>Build a one-month emergency buffer</li>
+              <li><span>2</span>Learn what shares and funds actually are</li>
+              <li><span>3</span>Open a low-cost account</li>
+              <li><span>4</span>Automate one small monthly investment</li>
+            </ul>
+          </article>
+
+          <article class="step" data-reveal data-delay="90">
+            <span class="n">02</span>
+            <h3>Build &amp; automate</h3>
+            <p>Turn the habit into a portfolio that can survive a bad year.</p>
+            <ul class="path-list">
+              <li><span>1</span>Find your honest risk profile</li>
+              <li><span>2</span>Choose an allocation you can hold</li>
+              <li><span>3</span>Understand rebalancing</li>
+              <li><span>4</span>Use the right tax wrapper</li>
+            </ul>
+          </article>
+
+          <article class="step" data-reveal data-delay="180">
+            <span class="n">03</span>
+            <h3>Go global</h3>
+            <p>Add the world without adding confusion — or hidden currency risk.</p>
+            <ul class="path-list">
+              <li><span>1</span>Currency basics for investors</li>
+              <li><span>2</span>How global funds work</li>
+              <li><span>3</span>Withholding tax and domicile</li>
+              <li><span>4</span>Concentration risk in a global index</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="section paper" id="cases">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>Updated case studies</span>
+            <h2>Real markets. <em>Real feelings.</em></h2>
+            <p>Numbers on a page are easy. These are the moments that test whether a plan is actually a plan.</p>
+          </div>
+        </div>
+
+        <div class="edu-grid">
+          <article class="edu-card" data-reveal data-delay="0">
+            <div class="edu-meta"><span>2020</span><span>Global equities</span><span>15 min</span></div>
+            <h3>The crash, replayed</h3>
+            <p>Between February and March 2020, global equities fell about 34% in 33 days. A ₹10 lakh portfolio became ₹6.6 lakh on paper. Investors who did nothing were back above their starting point within five months. The ones who sold locked in the loss.</p>
+            <div class="edu-foot"><span>Lesson: the recovery began before the news improved.</span><span class="pill">−34%</span></div>
+          </article>
+
+          <article class="edu-card" data-reveal data-delay="90">
+            <div class="edu-meta"><span>India</span><span>Allocation</span><span>12 min</span></div>
+            <h3>Gold, the quiet insurance</h3>
+            <p>Adding a 10% gold sleeve to a 60/40 portfolio softened the worst 12-month loss in every decade since 1990 — at the cost of a little upside. It is not a return engine. It is the thing that lets you stay invested in one.</p>
+            <div class="edu-foot"><span>Lesson: insurance is supposed to cost something.</span><span class="pill">10%</span></div>
+          </article>
+
+          <article class="edu-card" data-reveal data-delay="180">
+            <div class="edu-meta"><span>UAE</span><span>Faith &amp; finance</span><span>18 min</span></div>
+            <h3>A halal portfolio, built properly</h3>
+            <p>Sharia-screened equities, sukuk and gold can build a fully diversified plan. The hard work is in the screening, the purification of impermissible income and the ongoing review — not in sacrificing returns.</p>
+            <div class="edu-foot"><span>Lesson: constraints can sharpen a portfolio.</span><span class="pill">Screened</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RISK -->
+    <section class="section" id="risk">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>Risk management</span>
+            <h2>The rules that keep you <em>in the game.</em></h2>
+            <p>Returns get the attention. Risk gets the survivors. These three rules do more than most strategies.</p>
+          </div>
+        </div>
+
+        <div class="persona-grid">
+          <article class="persona" data-reveal data-delay="0">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v18M5 8h14M7 8v6a5 5 0 0 0 10 0V8" /></svg></div>
+            <h3>Size so a bad day is boring</h3>
+            <p>If one position can meaningfully change your life, it can meaningfully ruin it. Cap single-idea risk at a level you can shrug at.</p>
+            <div class="tags" style="margin-top:14px"><span class="pill">Position sizing</span><span class="pill">Survival</span></div>
+          </article>
+
+          <article class="persona" data-reveal data-delay="90">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2" /><path d="M3 10h18M8 6V4M16 6V4" /></svg></div>
+            <h3>Keep the buffer outside</h3>
+            <p>Three to six months of expenses, liquid and boring. It is the difference between a market fall and a forced sale at the bottom.</p>
+            <div class="tags" style="margin-top:14px"><span class="pill">Emergency fund</span><span class="pill">Liquidity</span></div>
+          </article>
+
+          <article class="persona" data-reveal data-delay="180">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 18h6M10 21h4" /><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3Z" /></svg></div>
+            <h3>Write the rule before the feeling</h3>
+            <p>Decide your exit, your rebalance band and your contribution amount while you are calm. Then let the rule — not the headline — decide.</p>
+            <div class="tags" style="margin-top:14px"><span class="pill">Behaviour</span><span class="pill">Pre-commitment</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GLOSSARY -->
+    <section class="section section--tight" id="glossary">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>The glossary</span>
+            <h2>Ask the <em>obvious question.</em></h2>
+            <p>There is no stupid question about your own money. Open any term below.</p>
+          </div>
+        </div>
+
+        <div class="accordion" data-reveal>
+          <details>
+            <summary>What is the difference between a mutual fund and an ETF?</summary>
+            <p>Both pool money to buy a basket of investments. A mutual fund is bought at the end-of-day price through the fund house; an ETF trades on an exchange all day like a share. The bigger difference is cost and how you use it — not which one is "better".</p>
+          </details>
+          <details>
+            <summary>What does "time in the market" actually mean?</summary>
+            <p>Missing a handful of the best days can wipe out years of returns, because the best days often arrive right after the worst. Staying invested is not laziness; it is how compounding reaches you.</p>
+          </details>
+          <details>
+            <summary>SIP or lump sum?</summary>
+            <p>A SIP spreads entry prices over time and suits regular income. A lump sum invests everything at once and historically wins more often — if you can handle the timing risk. Most people should automate what they earn, then invest windfalls deliberately.</p>
+          </details>
+          <details>
+            <summary>What is a bond, really?</summary>
+            <p>A loan. You give money to a government or company; they pay interest and return the principal at maturity. Bonds stabilise a portfolio, but they are not risk-free — prices fall when interest rates rise, and issuers can default.</p>
+          </details>
+          <details>
+            <summary>Why does diversification matter?</summary>
+            <p>Because you cannot predict which market will lead next year. Owning assets that react differently to the same news means no single mistake or region can decide your outcome.</p>
+          </details>
+          <details>
+            <summary>What is a risk profile?</summary>
+            <p>A honest description of how much volatility you can accept — financially and emotionally. It is not a personality test. It is the mix you will still hold when the screen is red.</p>
+          </details>
+          <details>
+            <summary>What is an expense ratio?</summary>
+            <p>The annual fee a fund charges, expressed as a percentage of your money. A 1% difference sounds small until it compounds against you for twenty years.</p>
+          </details>
+          <details>
+            <summary>What is a drawdown?</summary>
+            <p>The fall from an investment's peak to its lowest point before recovery. A 20% drawdown needs a 25% gain just to get back to where you started — which is why avoiding the worst behaviour matters.</p>
+          </details>
+          <details>
+            <summary>How does inflation affect my plan?</summary>
+            <p>It quietly reduces what your money can buy. A retirement corpus that looks generous in today's rupees may feel tight in twenty years, so projections need to be inflation-adjusted, not just nominal.</p>
+          </details>
+          <details>
+            <summary>What is rebalancing, in one sentence?</summary>
+            <p>Bringing your portfolio back to the mix you chose by trimming what ran ahead and topping up what lagged — usually once or twice a year, and usually boring.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="start">
+      <div class="container">
+        <span class="eyebrow" data-reveal><span class="dot"></span>Keep going</span>
+        <h2 data-reveal>Learn a little. <em>Then do a little.</em></h2>
+        <p data-reveal>Knowledge is only useful when it changes a habit. Start with one automated investment this month.</p>
+        <div class="hero-actions" style="justify-content:center" data-reveal>
+          <a class="btn btn-gold btn-lg" href="index.html#start">
+            Build my plan
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="insights.html">Read the market brief</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Wealth Compass home">
+            <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" opacity=".55" />
+              <path d="M24 6l4 14 14 4-14 4-4 14-4-14L6 24l14-4 4-14Z" fill="currentColor" />
+              <circle cx="24" cy="24" r="2.6" fill="#06090d" />
+            </svg>
+            <span class="brand-word">Wealth <em>Compass</em></span>
+          </a>
+          <p>AI wealth management with a human explanation. Portfolios, personal finance and retirement for India, the UAE, the US and beyond.</p>
+          <div class="locale-pills">
+            <span>India</span><span>UAE</span><span>USA</span><span>Global</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="portfolio.html">Portfolio management</a>
+          <a href="index.html#dashboard">Live dashboard</a>
+          <a href="index.html#goals">Goal planner</a>
+          <a href="portfolio.html#rules">Retirement</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Learn</h3>
+          <a href="education.html">Education hub</a>
+          <a href="education.html#cases">Case studies</a>
+          <a href="education.html#glossary">Glossary</a>
+          <a href="insights.html">Market guides</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Compass</h3>
+          <a href="index.html#approach">Our approach</a>
+          <a href="insights.html">Insights</a>
+          <a href="index.html#trust">Security</a>
+          <a href="index.html#start">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Wealth Compass. All rights reserved.</span>
+        <span>Made for India · UAE · USA · Global</span>
+      </div>
+
+      <p class="disclaimer">
+        Wealth Compass is a concept demonstration created for design and educational purposes. All figures, market data,
+        projections and AI signals shown are illustrative and do not represent real accounts or live prices. Nothing on this
+        site is investment, tax or legal advice. Investments carry risk, including loss of capital; past performance does not
+        guarantee future results. Always consult a qualified, regulated adviser before making financial decisions.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Intelligence — Wealth Compass</title>
+  <meta name="description" content="The market, translated. A plain-language read on India, UAE, US and global markets, with illustrative AI signals and what they mean for your plan." />
+  <meta name="theme-color" content="#070a0f" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Wealth Compass home">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" opacity=".55" />
+          <path d="M24 6l4 14 14 4-14 4-4 14-4-14L6 24l14-4 4-14Z" fill="currentColor" />
+          <circle cx="24" cy="24" r="2.6" fill="#070a0f" />
+        </svg>
+        <span class="brand-word">Wealth <em>Compass</em></span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="education.html">Education</a>
+        <a href="insights.html" aria-current="page">Insights</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#start" class="btn btn-ghost btn-sm">Sign in</a>
+        <a href="index.html#start" class="btn btn-gold btn-sm">Start free</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Market intelligence</span>
+        </nav>
+        <h1>The market, <em>translated.</em></h1>
+        <p class="lede">
+          Prices tell you what happened. Compass tells you what it might mean for your money —
+          and what to do about it, in language you can actually act on.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-gold btn-lg" href="#brief">
+            Read today's brief
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="education.html#risk">Learn the risk basics</a>
+        </div>
+        <div class="page-stats">
+          <div class="page-stat"><span>Markets covered</span><strong>6, one lens</strong></div>
+          <div class="page-stat"><span>Updates</span><strong>Daily brief</strong></div>
+          <div class="page-stat"><span>Language</span><strong>Plain English</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SNAPSHOT -->
+    <section class="section section--tight" id="brief">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>Market snapshot</span>
+            <h2>Four numbers. <em>One mood.</em></h2>
+            <p>Illustrative data for demonstration. Real decisions need live prices — and a plan that does not change with them.</p>
+          </div>
+          <span class="pill pill--gold">Demo data · 24 Nov 2026</span>
+        </div>
+
+        <div class="snapshot-grid" data-reveal>
+          <div class="snap">
+            <span class="label">NIFTY 50 · India</span>
+            <strong>24,812.40</strong>
+            <em>▲ 0.82% today</em>
+          </div>
+          <div class="snap">
+            <span class="label">S&amp;P 500 · USA</span>
+            <strong>6,128.44</strong>
+            <em>▲ 0.41% today</em>
+          </div>
+          <div class="snap">
+            <span class="label">DFM · UAE</span>
+            <strong>4,312.80</strong>
+            <em>▲ 0.27% today</em>
+          </div>
+          <div class="snap">
+            <span class="label">Gold · Global</span>
+            <strong>$4,120.30</strong>
+            <em>▲ 0.53% today</em>
+          </div>
+        </div>
+
+        <div class="insight-layout">
+          <div class="chart-card" data-reveal>
+            <div class="chart-card-head">
+              <div>
+                <h3>Global equity composite</h3>
+                <p class="muted" style="font-size:.76rem;margin-top:4px">Illustrative, rebased to the period start.</p>
+              </div>
+              <div class="segmented" role="group" aria-label="Chart period">
+                <button type="button" data-mrange="1M" aria-pressed="false">1M</button>
+                <button type="button" data-mrange="6M" aria-pressed="false">6M</button>
+                <button type="button" data-mrange="1Y" aria-pressed="true">1Y</button>
+                <button type="button" data-mrange="5Y" aria-pressed="false">5Y</button>
+              </div>
+            </div>
+            <div class="chart-wrap">
+              <div class="chart" id="marketChart"></div>
+            </div>
+            <div class="chart-card-head" style="margin-top:10px;align-items:center">
+              <span class="mono" id="marketChartChange" style="font-size:.72rem;color:var(--green)">+12.4% over the period</span>
+              <span class="pill">Not a forecast</span>
+            </div>
+            <div class="ai-strip" style="margin-top:16px">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z" /></svg>
+              <p><b>The plan says:</b> stay invested, rebalance the drift, and do not confuse a headline with a strategy. Nothing in this chart changes your horizon.</p>
+            </div>
+          </div>
+
+          <div class="signal-feed" data-reveal data-delay="90" aria-label="Illustrative AI signals">
+            <div class="signal-item">
+              <span class="signal-tag">Momentum</span>
+              <div>
+                <h4>Market breadth is improving</h4>
+                <p>More indices are participating in the move. That is healthier than a rally carried by three companies.</p>
+                <span class="impact">Constructive</span>
+              </div>
+            </div>
+            <div class="signal-item">
+              <span class="signal-tag">Valuation</span>
+              <div>
+                <h4>US large caps are priced for good news</h4>
+                <p>Not a sell signal. A reason to keep position sizes honest and expectations patient.</p>
+                <span class="impact neutral">Neutral</span>
+              </div>
+            </div>
+            <div class="signal-item">
+              <span class="signal-tag">Currency</span>
+              <div>
+                <h4>The dollar is firm</h4>
+                <p>Helps US assets in rupee terms, and quietly reduces emerging-market returns. Know which side you are on.</p>
+                <span class="impact caution">Watch</span>
+              </div>
+            </div>
+            <div class="signal-item">
+              <span class="signal-tag">Rates</span>
+              <div>
+                <h4>Bond yields are drifting higher</h4>
+                <p>Long bonds are more sensitive than short ones. Your bond sleeve is not a single decision.</p>
+                <span class="impact caution">Watch</span>
+              </div>
+            </div>
+            <div class="signal-item">
+              <span class="signal-tag">Macro</span>
+              <div>
+                <h4>Inflation is cooling, slowly</h4>
+                <p>Good for bonds and patient equity investors. Not a reason to chase a single good month.</p>
+                <span class="impact">Constructive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>What this means for you</span>
+            <h2>Same market. <em>Different next step.</em></h2>
+            <p>Market news is only useful when it meets your actual life. Pick the line that sounds like yours.</p>
+          </div>
+        </div>
+
+        <div class="persona-grid">
+          <article class="persona" data-reveal data-delay="0">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v18M5 8h14M7 8v6a5 5 0 0 0 10 0V8" /></svg></div>
+            <h3>If you invest monthly</h3>
+            <p>Keep the SIP running. A high market is not a reason to stop; it is the price of participating. Automate, then ignore the noise.</p>
+            <div class="tags" style="margin-top:14px"><span class="pill">Stay the course</span><span class="pill">SIP</span></div>
+          </article>
+
+          <article class="persona" data-reveal data-delay="90">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v4M5.6 5.6l2.8 2.8M3 12h4M17 12h4M15.6 8.4l2.8-2.8" /><path d="M6 17a6 6 0 0 1 12 0" /><path d="M3 21h18" /></svg></div>
+            <h3>If you are near retirement</h3>
+            <p>Your horizon is shorter than the market's mood. Check the withdrawal plan and the cash buffer before you check the index.</p>
+            <div class="tags" style="margin-top:14px"><span class="pill">Withdrawal plan</span><span class="pill">Cash buffer</span></div>
+          </article>
+
+          <article class="persona" data-reveal data-delay="180">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3Z" /></svg></div>
+            <h3>If you invest globally</h3>
+            <p>Currency is doing part of the work. Know whether it is a tailwind or a risk you did not consciously choose.</p>
+            <div class="tags" style="margin-top:14px"><span class="pill">Currency</span><span class="pill">Diversification</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDAR -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>The week ahead</span>
+            <h2>Dates that move <em>the mood.</em></h2>
+            <p>You do not need to trade these. You need to know why the screen might behave strangely.</p>
+          </div>
+          <span class="pill">Illustrative calendar</span>
+        </div>
+
+        <div class="table-wrap" data-reveal>
+          <table>
+            <caption class="sr-only">Illustrative economic calendar</caption>
+            <thead>
+              <tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Region</th><th scope="col">Why it matters</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="mono">27 Nov</td><td><strong>PCE inflation</strong></td><td>USA</td><td>The Fed's preferred inflation gauge; it shifts rate expectations.</td></tr>
+              <tr><td class="mono">29 Nov</td><td><strong>GDP, Q2</strong></td><td>India</td><td>Sets the tone for earnings, the rupee and rate-cut hopes.</td></tr>
+              <tr><td class="mono">02 Dec</td><td><strong>PMI</strong></td><td>UAE</td><td>A timely read on non-oil growth and hiring.</td></tr>
+              <tr><td class="mono">05 Dec</td><td><strong>Jobs report</strong></td><td>USA</td><td>Wage growth feeds inflation — and the path for rates.</td></tr>
+              <tr><td class="mono">10 Dec</td><td><strong>Policy decision</strong></td><td>Global</td><td>Liquidity and the dollar, which every market feels.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="demo-note" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></svg>
+          Dates and events are illustrative. Verify live schedules before acting.
+        </p>
+      </div>
+    </section>
+
+    <!-- NOTES -->
+    <section class="section paper">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="head-copy">
+            <span class="eyebrow"><span class="dot"></span>Market notes</span>
+            <h2>Read less. <em>Understand more.</em></h2>
+            <p>Three short reads that make the next headline easier to place.</p>
+          </div>
+          <a class="section-link" href="education.html">
+            All education
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </div>
+
+        <div class="edu-grid">
+          <a class="edu-card" href="education.html" data-reveal>
+            <div class="edu-meta"><span>Explainer</span><span>6 min</span></div>
+            <h3>Why the NIFTY is not the economy</h3>
+            <p>A stock index is a basket of large companies, not a country. It can rise while the high street struggles — and vice versa.</p>
+            <div class="edu-foot"><span>Read the note</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+          <a class="edu-card" href="education.html" data-reveal data-delay="90">
+            <div class="edu-meta"><span>Explainer</span><span>8 min</span></div>
+            <h3>What a strong dollar does to you</h3>
+            <p>If you earn in rupees or dirhams and own US assets, the currency is already part of your return. Here is how to see it.</p>
+            <div class="edu-foot"><span>Read the note</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+          <a class="edu-card" href="education.html" data-reveal data-delay="180">
+            <div class="edu-meta"><span>Behaviour</span><span>5 min</span></div>
+            <h3>The case for doing nothing</h3>
+            <p>Most portfolios are damaged by activity, not by markets. The boring option is usually the one that compounds.</p>
+            <div class="edu-foot"><span>Read the note</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <span class="eyebrow" data-reveal><span class="dot"></span>Beyond the headline</span>
+        <h2 data-reveal>Get a read that knows <em>your plan.</em></h2>
+        <p data-reveal>Generic market news is noise. Compass filters it through your goals, horizon and risk — then tells you what changed, if anything.</p>
+        <div class="hero-actions" style="justify-content:center" data-reveal>
+          <a class="btn btn-gold btn-lg" href="index.html#start">
+            Build my plan
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="portfolio.html#quiz">Find my risk mix</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Wealth Compass home">
+            <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" opacity=".55" />
+              <path d="M24 6l4 14 14 4-14 4-4 14-4-14L6 24l14-4 4-14Z" fill="currentColor" />
+              <circle cx="24" cy="24" r="2.6" fill="#06090d" />
+            </svg>
+            <span class="brand-word">Wealth <em>Compass</em></span>
+          </a>
+          <p>AI wealth management with a human explanation. Portfolios, personal finance and retirement for India, the UAE, the US and beyond.</p>
+          <div class="locale-pills">
+            <span>India</span><span>UAE</span><span>USA</span><span>Global</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="portfolio.html">Portfolio management</a>
+          <a href="index.html#dashboard">Live dashboard</a>
+          <a href="index.html#goals">Goal planner</a>
+          <a href="portfolio.html#rules">Retirement</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Learn</h3>
+          <a href="education.html">Education hub</a>
+          <a href="education.html#cases">Case studies</a>
+          <a href="education.html#glossary">Glossary</a>
+          <a href="insights.html">Market guides</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Compass</h3>
+          <a href="index.html#approach">Our approach</a>
+          <a href="insights.html">Insights</a>
+          <a href="index.html#trust">Security</a>
+          <a href="index.html#start">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Wealth Compass. All rights reserved.</span>
+        <span>Made for India · UAE · USA · Global</span>
+      </div>
+
+      <p class="disclaimer">
+        Wealth Compass is a concept demonstration created for design and educational purposes. All figures, market data,
+        projections and AI signals shown are illustrative and do not represent real accounts or live prices. Nothing on this
+        site is investment, tax or legal advice. Investments carry risk, including loss of capital; past performance does not
+        guarantee future results. Always consult a qualified, regulated adviser before making financial decisions.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
